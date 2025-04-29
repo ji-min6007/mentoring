@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>강원대학교 대학생 진로 멘토링 신청 프로그램 조회</title>
+<style>
+  body {
+    font-family: '맑은 고딕', sans-serif;
+    background-color: #f4f8fb;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .bold {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 90%;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 15px;
+  }
+  th {
+    background-color: #e0ecf8;
+  }
+  #searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<h1>강원대학교 대학생 진로 멘토링<br>신청 프로그램 조회</h1>
+<p class="bold">※ 이름 또는 핸드폰 번호를 입력하세요</p>
+<input type="text" id="searchInput" placeholder="이름 또는 핸드폰 번호 입력">
+<br>
+<button onclick="alert('조회 기능은 이 예시에서 제외되어 있습니다')">조회</button>
+<button onclick="window.print()">결과 출력하기</button>
+<div id="result"></div>
+
+<hr style="margin:40px 0;">
+
+<h2>📅 멘토링 전체 일정표</h2>
+<table>
+  <tr><th>구분</th><th>시간</th><th>진행 내용</th><th>장소</th></tr>
+  <tr><td>1</td><td>10:00~10:30</td><td>출석 확인 및 공지 전달</td><td>60주년기념관 입구</td></tr>
+  <tr><td>2</td><td>10:30~11:30</td><td>강대투어·Ice Breaking</td><td>계단강의실(110호)</td></tr>
+  <tr><td>3</td><td>11:30~12:30</td><td>점심 식사</td><td>백록관</td></tr>
+  <tr><td>4</td><td>12:30~13:30</td><td>너의 전공은 이 안에 있어! : 전공 소개</td><td rowspan="2">해당강의실</td></tr>
+  <tr><td>5</td><td>13:30~15:00</td><td>내 전공은 바로 너야! : 전공 체험</td></tr>
+  <tr><td>6</td><td>15:00~16:00</td><td>진로 골든벨</td><td rowspan="3">계단강의실(110호)</td></tr>
+  <tr><td>7</td><td>16:00~16:30</td><td>멘토와의 대화</td></tr>
+  <tr><td>8</td><td>16:30~17:00</td><td>수료식</td></tr>
+</table>
+
+</body>
+</html>
